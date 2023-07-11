@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* 박스사이징(보더박스)으로 메인 크기를 고정, 없으면 사이즈가 바뀜 */
+
+body {
+  margin: 0;
+  /* font-family:'Bagel Fat One', cursive; */
+  /* font-family: 'Diphylleia', serif; */
+  font-family: 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.main {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.section {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.section:nth-of-type(even) {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* inherits(상속)이 되는 속성: 글자와 관련된 대부분의 속성
+글자 색, 크기, / 아래 요소에만 상속 */
+
+/* 주석단축키 cmd+/ */
