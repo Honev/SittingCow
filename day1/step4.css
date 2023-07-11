@@ -14,7 +14,10 @@ body {
     BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
     'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
-  background-color: rgba(255, 0, 0, 0.1);
+  font-size: 18px;
+  line-height: 1.5;
+  /* 보통 한글은 1.7 이상으로 작업하는데 프리텐다드는 영문이랑 폰트 하이트 같게 하는 글자라 1.5로 설정 */
+  /* background-color: rgba(255, 0, 0, 0.1); */
 }
 
 .main {
@@ -30,7 +33,10 @@ body {
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.5);
+  margin-inline: auto;
+  padding-block: 56px;
+  max-width: 600px;
+  /* background-color: rgba(255, 255, 255, 0.5); */
 }
 
 /* inherits(상속)이 되는 속성: 글자와 관련된 대부분의 속성
