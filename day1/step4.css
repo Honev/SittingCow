@@ -33,10 +33,22 @@ body {
 }
 
 .container {
+  border: 1px solid black;
   margin-inline: auto;
-  padding-block: 56px;
-  max-width: 600px;
-  /* background-color: rgba(255, 255, 255, 0.5); */
+  /* padding-block: 56px, 24px; */
+  padding: 56px, 24px;
+  max-width: 65ch;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.h2 {
+  font-family: 'Bagle Fat One', cursive;
+}
+
+@media (width <= 600px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 /* inherits(상속)이 되는 속성: 글자와 관련된 대부분의 속성
