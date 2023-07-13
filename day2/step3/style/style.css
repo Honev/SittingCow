@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  /* 엄청나게 급진적인 css 리셋방법(이지만 많이씀) */
+  margin: 0;
+  padding: 0;
+}
+
+/* *은 앞으로 나올 모든것을 의미 */
+
+body {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  margin: 0;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* 한글 단어는 안잘리면서 영어는 잘라서라도 해결해주는 방법 */
+  /* word-break: keep-all; */
+  /* overflow-wrap: anywhere; */
+  /* 알빠노? 한글이라도 단어 잘라서 줄바꿈, 모바일 */
+  word-break: normal;
+  overflow-wrap: anywhere;
+  /* *에서 설정했지만 일단 남겨둠 */
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.root {
+  height: 100dvh;
+  border: 0.0625rem solid slateblue;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.section {
+  min-height: 1rem;
+  background-color: hsl(0, 100%, 50%, 0.1);
+}
+
+.nowrap {
+  /* 나중에 보충설명 */
+  white-space: nowrap;
+}
+
+img,
+video,
+picture,
+svg,
+object {
+  /* 블록요소로 적용을 안하면 인라인박스로 적용되어서 글자가 올거라는 가정 하에 디센더라인이 적용됨(4px) */
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  /* 레이아웃 이상해지고 다른 h1태그도 마진이 같이생김 */
+  /* margin-top: 3rem; */
+}
+
+.title {
+  /* 여전히 마진으로 조지면 이상함 */
+  /* margin-top: 48px; */
+}
+
+.section {
+  /* h1과 같이 섹션이라는 이름 전체를 조져서 레이아웃 이상해짐 */
+  padding-top: 48px;
+}
