@@ -47,7 +47,7 @@ p {
 
 .section {
   min-height: 1rem;
-  background-color: hsl(0, 100%, 50%, 0.1);
+  /* background-color: hsl(0, 100%, 50%, 0.1); */
 }
 
 .nowrap {
@@ -77,5 +77,32 @@ h1 {
 
 .section {
   /* h1과 같이 섹션이라는 이름 전체를 조져서 레이아웃 이상해짐 */
-  padding-top: 48px;
+  /* padding-top: 48px; */
+}
+
+.section {
+  padding-block: 3rem;
+  /* 배경의 가로가 잘려버리는 이슈 */
+  /* max-width: 1024px; */
+}
+
+/* 갱장히 드럽고 번거로운 방법
+.section > * {
+  max-width: 1024px;
+} */
+
+#section-1 {
+  padding-block: 5rem;
+}
+
+.container {
+  /* background-color: hsl(240, 100%, 50%, 0.1); */
+  margin-inline: auto;
+  max-width: 1024px;
+  padding-inline: 1.5rem;
+}
+
+#section-1 .title {
+  margin-bottom: 8px;
+  font-size: 3rem;
 }
