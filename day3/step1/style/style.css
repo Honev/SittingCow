@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.div-box {
+  padding: 1.5rem;
+  background-color: brown;
+}
+
+.wrap {
+  /* position: static; */
+  position: relative;
+  padding: 56px;
+  background-color: cornflowerblue;
+}
+
+.child-in-div-box {
+  padding: 1.5rem;
+  background-color: bisque;
+}
+
+.child-in-div-box:nth-of-type(2) {
+  /* position: static; */
+  /* position: relative; */
+  /* position: absolute; */
+  /* position: sticky; */
+  position: fixed;
+  /* top: 50px; */
+  /* left: 200px; */
+  /* top: 50px; */
+  /* left: 50px; */
+  background-color: lightgreen;
+}
